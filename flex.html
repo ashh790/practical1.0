@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            margin: 20px;
+            
+        }
+        .box1{
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+            flex-grow: 2;
+        }
+        .box2{
+            padding: 20px;
+            flex-grow: 3;
+        }
+        .box{
+            width: 50px;
+            margin: 20px;
+        }
+        .big{
+            flex-grow: 2;
+        }
+        .small{
+            flex-grow: 1;
+        }
+        .medium{
+            flex-grow: 1.5;
+        }
+        .container1{
+            display: flex;
+            flex-direction:row;
+
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+        }
+        .container3{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .container4{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container5{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .container6{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .container7{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .container8{
+            display: flex;
+            justify-content: center;
+        }
+
+        .container9{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container10{
+            display: flex;
+            justify-content:space-around;
+        }
+
+        .container11{
+            display: flex;
+            align-items: center;
+        }
+        .container12{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .container13{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .container14{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container15{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .container16{
+            display: flex;
+            flex-direction: column;
+        }
+        .container17{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex Direction Row</h2>
+    <div class="container1" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+
+    </div>
+    <h2>Flex Direction column</h2>
+    <div class="container2" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction row reverse</h2>
+    <div class="container3" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction wrrap</h2>
+    <div class="container4" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction no wrap</h2>
+    <div class="container5" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction justify-content</h2>
+    <div class="container6" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction flex-end</h2>
+    <div class="container7" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction center</h2>
+    <div class="container8" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction space between</h2>
+    <div class="container9" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction space around</h2>
+    <div class="container10" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction align center </h2>
+    <div class="container11" style="background-color:aquamarine;height: 200px;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction column flex start</h2>
+    <div class="container12" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction column flex end</h2>
+    <div class="container13" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction column center </h2>
+    <div class="container14" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction column stretch </h2>
+    <div class="container15" style="background-color:aquamarine;width: 200px;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    <h2>Flex Direction column order </h2>
+    <div class="container16" style="background-color:aquamarine;">
+        <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;order: 3;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;order: 2;"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;order: 1;"></div>
+    </div>
+    <h2>Flex Direction column grow </h2>
+    <div class="container17" style="background-color:aquamarine;">
+        <div class="box2" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s);background-size: cover;"></div>
+        <div class="box2" style="background-image: url(https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80);background-size: cover;"></div>
+        <div class="box2" style="background-image: url(https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg);background-size: cover;"></div>
+    </div>
+    
+    
+</body>
+</html>

@@ -7,4 +7,7 @@
 <p>
 
 # 🛠 Technology
- 
+## HTML
+## CSS
+## JAVASCRIPT
+## REACT
